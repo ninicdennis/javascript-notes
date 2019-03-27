@@ -1,0 +1,207 @@
+//Some notes for javascript.
+
+//let must always be defined first. Var it will not matter but if it is defined somewhere
+//it becomes a real pain to find it. 
+//================================
+
+var foobar
+let barfoo
+const AUTH_ERROR
+
+// you can assign variables early to have it reserved so that way things dont get
+// really messy. Var and let are typically always changing and const should typically
+// never change.
+
+const foobar {
+   foo:"bar"
+   bar:1
+   test:true
+
+}
+
+// creating a constant of foobar with internal objects and what they are listed as.
+// example, foo:"bar" means the var foo is equal to the string "bar".
+
+foobar.bar = 2;
+
+// adjusting object foobar to change the internal object value.
+
+const friends = [];
+
+// making a constant of friends which is an array, defined as [].
+// you can put stuff in it. Wow.
+
+var firstName = "name"
+
+// assigning variable firstName with the string of "name"
+// you should assign anything with "var" or "let" if you plan on changing the variable.
+
+function main() {
+
+}
+
+main()
+
+// creating function of main(). Basically how you start anything.
+
+console.log(foobar.foo)
+
+// output something into log. You can print out certain objects into it by calling
+// said object. For example, this would output into terminal saying "1".
+
+var user = "Jeff"
+
+const user = {}
+
+user.name = name
+
+// you are setting user var to "Jeff" and then assigning a blank object named user.
+// you can then set objects in with user.name = name and it stores name into the
+// object user. 
+// you are calling user to have object "name" and to hold the value of the
+// variable of name. It is not a requirement to have them as the same name.
+
+if age == 18 || age < 21;
+  console.log("foobar")
+else;
+   break
+// the || meaning "or" you can use && for "and".
+
+
+if (foobar == true) {
+   console.log("true")
+
+}
+else if (foobar == false) {
+   console.log("false")
+
+}
+else {
+   console.log("unexpected variable, exiting...")
+
+}
+
+// if statements must be put into parenthysis and have braced wrapped around the
+// if statement. Else if only happens when if the first is not true, and performs
+// a second if statement.
+
+switch(weather){
+      case "snowing":
+        console.log("Man it is going to be cold...grab a coat")
+        break
+      case  "raining":
+        console.log("You should not see this.")
+      case "sunny":
+        console.log("You should not see this.")
+    }
+
+// prevents mulitple if statements and tests for multiple things in one pull.
+// UPDATE: you must break the case in order for it not to print out everything.
+// remember, it must be a conditional statement so think of it as an if statement.
+// case also already pre defines the equals so you are comparing case == "sunny".
+
+
+    let friends = [
+      {
+      name: 'Joseph',
+      age: 10,
+      student: true
+    },
+      {
+      name: 'Steve',
+      age: 34,
+      student: false
+    },
+      {
+      name: 'Levi',
+      age: 23,
+      student: true
+    }]
+
+// objects can be defined into an array, and split into groups. so, you can call
+// said object in friends[0] (the first one) or friends[1] (the second one)
+// and will call on specific object so:
+
+friend = friends[1];
+
+if (friend.age < 12){
+   console.log("coolio")
+}
+
+// will compare friend 2 ( [1] is the second person in the array ) and his
+// age specifically.
+
+function foobar() {
+   return "hello"
+}
+
+// this will create a function of foobar. You can put your input in the ()
+// the return operand will return whatever sort of math or wizardry you 
+// did in said function.
+
+for (let i=0;i < nums.legnth; i++)
+
+// a for loop will always require 3 comparators, the first is typically
+// used for assigning something important such as a variable. Typically
+// the example used about is based off arrays.
+
+// the second comparator is the if statement basically, its what makes
+// you break the for loop break.
+
+// the third comparator is pretty much for increasing the number amount
+// for i, so that the second condition could finally be met.
+
+// THE ARGUMENT "return" IN A FUNCTION WILL BREAK AN ENTIRE LOOP
+
+var x = 0
+while ( x < 4) {
+   x++
+}
+
+// a while loop is similar to a for loop, you would use this during a
+// true or false statement. So there isnt a max defined amount of times
+// you should be running this program, only stop when it is false.
+// HINT: there is a third loop called do while, it is similar to
+// while, but it will always guarentee run once. The while loop
+// has no requirement to run at all. 
+
+continue
+
+// typically this will be found inside of an IF statement. This will let you reset to
+// the top of the if statement in the first place. Can be helpful.
+
+
+user.length
+
+// This will output the legnth of the user, be it number of objects or characters.
+
+function* foobar(){
+
+yield console.log("foobar")
+
+}
+
+// function generators are just normal functions but you can stop them any time you really
+// wish. it will stop right on the yeild point. Pretty neat. Next line is also an example.
+
+function* idMaker() {
+  var index = 0;
+  while (index < index+1)
+    yield index++;
+}
+
+var gen = idMaker();
+
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+
+// It does have an infinite loop, but will always yeild at i++ so that every time it is
+// called it will add 1 to i.
+
+function callback(results){
+// do something here
+}
+
+// waits a certain amount of time to do something.
